@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="on">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>Música para todos - Spotify</title>
+</head>
+
+<body>
+	
+	
+	<navbar id="navbar">
+
+		<div class="navbar-container">
+			
+			<img src="https://github.com/felipemotarocha/spotify-clone/blob/master/img/logo.png?raw=true" alt="" class="logo"> 
+			
+			<ul class="navbar-items">
+				<li class="navbar-items">Premium</li>
+				<li class="navbar-items">Ajuda</li>
+				<li class="navbar-items">Baixar</li>
+				<li class="navbar-items">Inscrever-se </li>
+				<li class="navbar-items">|</li>
+				<li class="navbar-items">Entrar</li>
+			</ul>
+		
+		</div>
+
+	</navbar>
+
+
+	
+	<div id="showcase">
+		
+		<div class="showcase-container">
+			<h2>Música para todos.</h2>
+			<p>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.</p>
+			<button class="btn-primary">Obtenha o Spotify Free</button>
+		</div>
+		
+	</div>
+
+
+
+
+	<footer id="footer">
+		
+		<div class="footer-content">
+			
+			<img src="https://github.com/felipemotarocha/spotify-clone/blob/master/img/logo.png?raw=true" alt="" class="logo">
+			
+			<ul class="footer-menu">
+				<p>Empresa</p>
+				<li class="footer-menu-item">
+					Sobre
+				</li>
+				<li class="footer-menu-item">
+					Emprego
+				</li>
+				<li class="footer-menu-item">
+					For the record
+				</li>
+			</ul>
+
+			<ul class="footer-menu">
+				<p>Comunidades</p>
+				<li class="footer-menu-item">
+					Para artistas
+				</li>
+				<li class="footer-menu-item">
+					Desenvolvedores
+				</li>
+				<li class="footer-menu-item">
+					Marcas
+				</li>
+				<li class="footer-menu-item">
+					Investidores
+				</li>
+				<li class="footer-menu-item">
+					Fornecedores
+				</li>
+			</ul>
+
+			<ul class="footer-menu">
+				<p>Links úteis</p>
+				<li class="footer-menu-item">
+					Ajuda
+				</li>
+				<li class="footer-menu-item">
+					Player na Web
+				</li>
+				<li class="footer-menu-item">
+					Aplicativo móvel grátis
+				</li>
+			</ul>
+			<div class="socials">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+
+
+
+			</div>
+		
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+	<style>
+		
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}	
+
+		body{
+			font-family: 'Roboto', sans-serif;
+		}
+
+
+		/* Utility Classes */
+
+		.btn-primary{
+			background: #1db954;
+			color: white;
+			text-transform: uppercase;
+			padding: 15px 50px;
+			border: none;
+			border-radius: 30px;
+			letter-spacing: 1px;
+			font-weight: bold;
+			transition: all 300ms ease;
+
+		}
+
+		.btn-primary:hover {
+			background: var(--light-green);
+			cursor: pointer;
+		}
+
+		.logo {
+			height: 40px;
+			width: auto;
+		}
+
+				/* NAVBAR */
+		
+		#navbar{
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white;
+			justify-content: center; 
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		#navbar .navbar-container{
+			width: 60%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 0;
+		}
+
+		
+
+		#navbar .navbar-container ul{
+			display: flex;
+			list-style: none;
+			font-weight: bold;
+		}
+
+		#navbar .navbar-container ul li{
+			padding: 0 20px;
+		}
+
+
+
+		/* SHOWCASE */
+
+		#showcase{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			background: url("https://www.mundodamusicamm.com.br/media/k2/items/cache/60959e8d8c34f5c00b9627dfd768f462_XL.jpg") center center/cover;
+			background-color: rgba(0, 0, 0, 0.4);
+			background-blend-mode: color; 
+		}
+
+		#showcase .showcase-container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#showcase .showcase-container h2{
+			font-size: 5rem;
+		}
+		
+		#showcase .showcase-container p{
+			margin: 15px 0;
+			font-size: 1.1rem;
+		}
+
+
+		/*FOOTER*/
+
+		#footer{
+			background: black;
+			color: white;
+		}
+
+		#footer .footer-content{
+			display: flex;
+			width: 60%;
+			margin: auto;
+			padding: 80px 0;
+		}
+
+		#footer .footer-content .footer-menu{
+			margin: 0 60px;
+			list-style: none;
+		}
+
+		#footer .footer-content .footer-menu-item{
+			margin: 25px 0;
+		}
+
+		#footer .footer-content .footer-menu p{
+			font-weight: bold;
+			text-transform: uppercase; 
+			color: #919496;
+			font-size: 0.8rem;
+		}
+
+		/*FOOTER SOCIALS*/
+		.socials{
+			display: flex;
+		}
+
+		.socials i{
+			margin: 0 20px;
+			font-size: 1.7rem;
+		}
+
+
+		/*FOOTER INFO*/
+		.footer-info{
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			width: 60%;
+			margin: auto;
+			font-weight: bold;
+			color:  #919496;
+			font-size: 0.75rem;
+		}
+
+		.footer-info .footer-info-items{
+			display: flex;
+			list-style: none;
+		}
+
+		.footer-info .footer-info-items .footer-info-item{
+			margin: 0 10px;
+			font-weight: bold;
+			color:  #919496;
+			font-size: 0.75rem;
+		}
+
+		.footer-info .rights{
+		
+		}
+
+		.footer-info .rights .country{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		
+
+		.footer-info .rights .country p {
+			transition: all 300ms ease;
+		}
+
+		.footer-info .rights .country p:hover {
+			color: var(--default-green);
+			cursor: pointer;
+		}
+
+		.footer-info .rights .country .brazil-flag {
+			height: 20px;
+			width: auto;
+			display: inline-block;
+			margin-left: 10px;
+		}
+
+
+	</style>
+
+	<script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+</body>
+</html>
